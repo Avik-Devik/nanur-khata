@@ -42,10 +42,10 @@ Nanu warned me that her secret spice blend must never reach GitHub. I created `s
 
 git status
 git add .gitignore
-git commit -m "chore: ignore secret-masala.txt, tmp files, and drafts"
+git commit -m "ignore secret-masala.txt, tmp files, and drafts"
 ```
 
-![Chapter 2 Gitignore Screenshot](./screenshots/ch2-gitignore.png)
+![Screenshot 4](./screenshots/Screenshot_04.png)
 
 ---
 
@@ -56,8 +56,8 @@ To test Eid recipes safely, I created the `eid-special` branch and committed `bi
 ```bash
 git branch eid-special
 git checkout eid-special
-git add biryani.md && git commit -m "feat: add Eid biryani recipe"
-git add shemai.md && git commit -m "feat: add Eid shemai recipe"
+git add biryani.md && git commit -m "add Eid biryani recipe"
+git add shemai.md && git commit -m "add Eid shemai recipe"
 git checkout main
 git merge eid-special
 git log --oneline
@@ -67,7 +67,9 @@ git log --oneline
 1. **Created Conflict:** I edited the sweetener line of `shemai.md` on `main` (`Sugar: 1 cup`) and committed it. Then I switched to `eid-special`, changed the **same line** in `shemai.md` (`Condensed milk: 1/2 tin`), and committed it. Running `git merge eid-special` on `main` triggered a merge conflict.
 2. **Resolved Conflict:** I opened `shemai.md`, deleted the conflict markers (`<<<<<<< HEAD`, `=======`, `>>>>>>> eid-special`), kept the final recipe line we wanted, and ran `git add shemai.md` followed by `git commit -m "merge: resolve shemai sweetener conflict"`.
 
-![Chapter 3 Conflict Screenshot](./screenshots/ch3-conflict.png)
+![Screenshot 5](./screenshots/Screenshot_05.png)
+![Screenshot 6](./screenshots/Screenshot_06.png)
+![Screenshot 7](./screenshots/Screenshot_07.png)
 
 ---
 
@@ -81,7 +83,7 @@ git push -u origin main
 
 # Mitu's side:
 git clone https://github.com/YOUR-USERNAME/nanur-khata.git mitu-folder
-git add chittagong-mezban.md && git commit -m "feat: add Chattogram mezban recipe"
+git add chittagong-mezban.md && git commit -m "add Chattogram mezban recipe"
 git push origin main
 
 # My side:
@@ -94,7 +96,10 @@ git pull origin main
 * **`git fetch` + `git merge`**: `git fetch` downloads new changes from GitHub into `origin/main` **without** changing your local working files, letting you review them first before running `git merge`.
 * **`git pull`**: Automatically runs `git fetch` and `git merge` together in one command, immediately updating your local branch and working directory.
 
-![Chapter 4 Sync Screenshot](./screenshots/ch4-sync.png)
+![Screenshot 8](./screenshots/Screenshot_08.png)
+![Screenshot 9](./screenshots/Screenshot_09.png)
+![Screenshot 10](./screenshots/Screenshot_10.png)
+![Screenshot 11](./screenshots/Screenshot_11.png)
 
 ---
 
@@ -104,9 +109,9 @@ While writing `halua.md`, Nanu reminded me to add cardamom to the biryani. I sta
 ### Key Commands
 ```bash
 git stash
-git add biryani.md && git commit -m "fix: add cardamom to biryani"
+git add biryani.md && git commit -m "add cardamom to biryani"
 git stash pop
-git add halua.md && git commit -m "feat: complete halua recipe"
+git add halua.md && git commit -m "complete halua recipe"
 
 git mv bhapa-pitha.md shemai.md halua.md desserts/
 git rm old-recipe.md
@@ -132,5 +137,10 @@ Both commands **rewrite commit history**:
 ```bash
 git log --oneline --graph --all
 ```
-
-![Final Git Log Graph Screenshot](./screenshots/final-graph.png)
+![Screenshot 12](./screenshots/Screenshot_12.png)
+![Screenshot 13](./screenshots/Screenshot_13.png)
+![Screenshot 14](./screenshots/Screenshot_14.png)
+![Screenshot 15](./screenshots/Screenshot_15.png)
+![Screenshot 16](./screenshots/Screenshot_16.png)
+![Screenshot 17](./screenshots/Screenshot_17.png)
+![Final Git Log Graph Screenshot](./screenshots/Screenshot_18.png)
