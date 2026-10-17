@@ -1,4 +1,4 @@
 # Lachcha Shemai
-- Rosted vermicelli: 200g
+- Roasted vermicelli: 200g
 - Full cream milk: 1 liter
-- Sugar: 1/2 cup
+- Condensed milk: 1/2 tin instead of sugar
