@@ -24,7 +24,9 @@ git reset bazar-list.txt
 * **`git diff`**: Shows **unstaged changes** by comparing your working directory against the staging area (e.g., my new edit changing `2 cups` to `1.5 cups` of gur before running `git add`).
 * **`git diff --staged`**: Shows **staged changes** ready for the next commit by comparing the staging area against the last commit (`HEAD`).
 
-![Chapter 1 Diff Screenshot](./screenshots/ch1-diff.png)
+!(./screenshots/Screenshot_01.png)
+!(./screenshots/Screenshot_02.png)
+!(./screenshots/Screenshot_03.png)
 
 ---
 
