@@ -16,7 +16,7 @@ git init
 git add bhapa-pitha.md
 git diff
 git diff --staged
-git commit -m "feat: add bhapa pitha recipe with 1.5 cups gur"
+git commit -m "add bhapa pitha recipe with 1.5 cups gur"
 git reset bazar-list.txt
 ```
 
@@ -24,9 +24,9 @@ git reset bazar-list.txt
 * **`git diff`**: Shows **unstaged changes** by comparing your working directory against the staging area (e.g., my new edit changing `2 cups` to `1.5 cups` of gur before running `git add`).
 * **`git diff --staged`**: Shows **staged changes** ready for the next commit by comparing the staging area against the last commit (`HEAD`).
 
-!(./screenshots/Screenshot_01.png)
-!(./screenshots/Screenshot_02.png)
-!(./screenshots/Screenshot_03.png)
+![Screenshot 1](./screenshots/Screenshot_01.png)
+![Screenshot 2](./screenshots/Screenshot_02.png)
+![Screenshot 3](./screenshots/Screenshot_03.png)
 
 ---
 
